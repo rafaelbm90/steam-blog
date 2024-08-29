@@ -3,7 +3,6 @@ import type { LoaderFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import { getPostsListings } from "~/models/post.server";
 import { useOptionalAdminUser } from "~/utils";
-import { env } from "process";
 
 type LoaderData = {
   posts: Awaited<ReturnType<typeof getPostsListings>>;
