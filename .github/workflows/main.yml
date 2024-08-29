@@ -10,12 +10,14 @@
 #       - uses: actions/checkout@v2
 #       - uses: superfly/flyctl-actions/setup-flyctl@master
 #       - run: flyctl deploy
+
 name: 🚀 Deploy
 
 on:
   push:
     branches:
       - main
+      - master
       - dev
   pull_request:
 
